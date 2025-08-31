@@ -1,0 +1,40 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task -l
+  run-short:
+    desc: Run with questions from config.yml
+    deps:
+      - build
+    cmds:
+      - dist/checker --short
+
+  run-long:
+    desc: Run with questions from chat directory
+    deps:
+      - build
+    cmds:
+      - dist/checker --long
+
+  build:
+    desc: Build the Go application to dist directory
+    sources:
+      - "**/*.go"
+      - go.mod
+      - go.sum
+    generates:
+      - dist/checker
+    cmds:
+      - mkdir -p dist
+      - go build -o dist/checker main/main.go
+
+  create:
+    desc: create automated reasoning
+    cmds:
+      - |
+        aws bedrock create-automated-reasoning-policy \
+        --name "zai" \
+        --description "Zombie Apocalypse Insurance rules"
+    # The document has rules for an fictional insurance company. Assume all mythical creatures exist.

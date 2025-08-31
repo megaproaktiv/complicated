@@ -1,0 +1,123 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "ClaimsFalseScenario": {
+                "Statements": [
+                  {
+                    "Logic": "(= isPropertyProtected\n   true)",
+                    "NaturalLanguage": "isPropertyProtected is true"
+                  },
+                  {
+                    "Logic": "(= alienEncounterCount\n   5)",
+                    "NaturalLanguage": "alienEncounterCount is equal to 5"
+                  },
+                  {
+                    "Logic": "(= virusProtectionActive\n   true)",
+                    "NaturalLanguage": "virusProtectionActive is true"
+                  }
+                ]
+              },
+              "ClaimsTrueScenario": {
+                "Statements": [
+                  {
+                    "Logic": "(= isPropertyProtected\n   false)",
+                    "NaturalLanguage": "isPropertyProtected is false"
+                  },
+                  {
+                    "Logic": "(= alienEncounterCount\n   5)",
+                    "NaturalLanguage": "alienEncounterCount is equal to 5"
+                  },
+                  {
+                    "Logic": "(= virusProtectionActive\n   true)",
+                    "NaturalLanguage": "virusProtectionActive is true"
+                  }
+                ]
+              },
+              "LogicWarning": null,
+              "Translation": {
+                "Claims": [
+                  {
+                    "Logic": "(not isPropertyProtected)",
+                    "NaturalLanguage": "isPropertyProtected is false"
+                  }
+                ],
+                "Confidence": 1,
+                "Premises": [
+                  {
+                    "Logic": "virusProtectionActive",
+                    "NaturalLanguage": "virusProtectionActive"
+                  },
+                  {
+                    "Logic": "(= alienEncounterCount\n   5)",
+                    "NaturalLanguage": "alienEncounterCount is equal to 5"
+                  }
+                ],
+                "UntranslatedClaims": [
+                  {
+                    "Text": "No, this violates Rule 2: The Alien-Virus Contamination Protocol"
+                  }
+                ],
+                "UntranslatedPremises": []
+              }
+            }
+          },
+          {
+            "Value": {}
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 64,
+            "Total": 187
+          }
+        },
+        "GuardrailProcessingLatency": 5777,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 64,
+      "Total": 187
+    }
+  },
+  "ResultMetadata": {}
+}

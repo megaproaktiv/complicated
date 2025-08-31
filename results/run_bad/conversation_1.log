@@ -1,0 +1,152 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "DifferenceScenarios": [
+                {
+                  "Statements": [
+                    {
+                      "Logic": "(= isPropertyProtected\n   false)",
+                      "NaturalLanguage": "isPropertyProtected is false"
+                    },
+                    {
+                      "Logic": "(= zombieCount 51)",
+                      "NaturalLanguage": "zombieCount is equal to 51"
+                    },
+                    {
+                      "Logic": "(= isZombieApocalypseEvent\n   false)",
+                      "NaturalLanguage": "isZombieApocalypseEvent is false"
+                    }
+                  ]
+                },
+                {
+                  "Statements": []
+                }
+              ],
+              "Options": [
+                {
+                  "Translations": [
+                    {
+                      "Claims": [
+                        {
+                          "Logic": "(not isPropertyProtected)",
+                          "NaturalLanguage": "isPropertyProtected is false"
+                        }
+                      ],
+                      "Confidence": null,
+                      "Premises": [
+                        {
+                          "Logic": "(= zombieCount 51)",
+                          "NaturalLanguage": "zombieCount is equal to 51"
+                        },
+                        {
+                          "Logic": "(= insuranceType BASIC)",
+                          "NaturalLanguage": "insuranceType is equal to BASIC"
+                        }
+                      ],
+                      "UntranslatedClaims": [],
+                      "UntranslatedPremises": []
+                    }
+                  ]
+                },
+                {
+                  "Translations": [
+                    {
+                      "Claims": [
+                        {
+                          "Logic": "(not isPropertyProtected)",
+                          "NaturalLanguage": "isPropertyProtected is false"
+                        }
+                      ],
+                      "Confidence": null,
+                      "Premises": [
+                        {
+                          "Logic": "(= zombieCount 51)",
+                          "NaturalLanguage": "zombieCount is equal to 51"
+                        },
+                        {
+                          "Logic": "(= insuranceType BASIC)",
+                          "NaturalLanguage": "insuranceType is equal to BASIC"
+                        }
+                      ],
+                      "UntranslatedClaims": [],
+                      "UntranslatedPremises": []
+                    },
+                    {
+                      "Claims": [
+                        {
+                          "Logic": "isZombieApocalypseEvent",
+                          "NaturalLanguage": "isZombieApocalypseEvent"
+                        }
+                      ],
+                      "Confidence": null,
+                      "Premises": [
+                        {
+                          "Logic": "(= zombieCount 51)",
+                          "NaturalLanguage": "zombieCount is equal to 51"
+                        }
+                      ],
+                      "UntranslatedClaims": [],
+                      "UntranslatedPremises": []
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 38,
+            "Total": 110
+          }
+        },
+        "GuardrailProcessingLatency": 5375,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 38,
+      "Total": 110
+    }
+  },
+  "ResultMetadata": {}
+}

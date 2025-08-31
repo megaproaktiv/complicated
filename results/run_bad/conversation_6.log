@@ -1,0 +1,140 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "ClaimsFalseScenario": {
+                "Statements": [
+                  {
+                    "Logic": "(= insuranceType BASIC)",
+                    "NaturalLanguage": "insuranceType is equal to BASIC"
+                  },
+                  {
+                    "Logic": "(= isCohabitationAllowed\n   true)",
+                    "NaturalLanguage": "isCohabitationAllowed is true"
+                  },
+                  {
+                    "Logic": "(= isPropertyProtected\n   false)",
+                    "NaturalLanguage": "isPropertyProtected is false"
+                  },
+                  {
+                    "Logic": "(= vampireCount 5)",
+                    "NaturalLanguage": "vampireCount is equal to 5"
+                  },
+                  {
+                    "Logic": "(= zombieCount 10)",
+                    "NaturalLanguage": "zombieCount is equal to 10"
+                  }
+                ]
+              },
+              "ClaimsTrueScenario": {
+                "Statements": [
+                  {
+                    "Logic": "(= insuranceType BASIC)",
+                    "NaturalLanguage": "insuranceType is equal to BASIC"
+                  },
+                  {
+                    "Logic": "(= isCohabitationAllowed\n   true)",
+                    "NaturalLanguage": "isCohabitationAllowed is true"
+                  },
+                  {
+                    "Logic": "(= isPropertyProtected\n   true)",
+                    "NaturalLanguage": "isPropertyProtected is true"
+                  },
+                  {
+                    "Logic": "(= vampireCount 5)",
+                    "NaturalLanguage": "vampireCount is equal to 5"
+                  },
+                  {
+                    "Logic": "(= zombieCount 10)",
+                    "NaturalLanguage": "zombieCount is equal to 10"
+                  }
+                ]
+              },
+              "LogicWarning": null,
+              "Translation": {
+                "Claims": [
+                  {
+                    "Logic": "isPropertyProtected",
+                    "NaturalLanguage": "isPropertyProtected"
+                  }
+                ],
+                "Confidence": 1,
+                "Premises": [
+                  {
+                    "Logic": "(= vampireCount 5)",
+                    "NaturalLanguage": "vampireCount is equal to 5"
+                  },
+                  {
+                    "Logic": "(= zombieCount 10)",
+                    "NaturalLanguage": "zombieCount is equal to 10"
+                  },
+                  {
+                    "Logic": "isCohabitationAllowed",
+                    "NaturalLanguage": "isCohabitationAllowed"
+                  },
+                  {
+                    "Logic": "(= insuranceType BASIC)",
+                    "NaturalLanguage": "insuranceType is equal to BASIC"
+                  }
+                ],
+                "UntranslatedClaims": [],
+                "UntranslatedPremises": []
+              }
+            }
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 56,
+            "Total": 178
+          }
+        },
+        "GuardrailProcessingLatency": 4980,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 56,
+      "Total": 178
+    }
+  },
+  "ResultMetadata": {}
+}

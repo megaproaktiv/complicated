@@ -1,0 +1,170 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "ClaimsTrueScenario": {
+                "Statements": [
+                  {
+                    "Logic": "(= isCohabitationAllowed\n   false)",
+                    "NaturalLanguage": "isCohabitationAllowed is false"
+                  },
+                  {
+                    "Logic": "(= hasPhotoEvidence\n   true)",
+                    "NaturalLanguage": "hasPhotoEvidence is true"
+                  },
+                  {
+                    "Logic": "(= hasExtraterrestrialContactAddendum\n   false)",
+                    "NaturalLanguage": "hasExtraterrestrialContactAddendum is false"
+                  },
+                  {
+                    "Logic": "(= allThreeCreaturesWithin30Days\n   false)",
+                    "NaturalLanguage": "allThreeCreaturesWithin30Days is false"
+                  },
+                  {
+                    "Logic": "(= vampirePresent true)",
+                    "NaturalLanguage": "vampirePresent is true"
+                  },
+                  {
+                    "Logic": "(= vampireCount 0)",
+                    "NaturalLanguage": "vampireCount is equal to 0"
+                  },
+                  {
+                    "Logic": "(= insuranceType\n   INSURANCE_TYPE_OTHER)",
+                    "NaturalLanguage": "insuranceType is equal to INSURANCE_TYPE_OTHER"
+                  },
+                  {
+                    "Logic": "(= hasCommercialPolicy\n   true)",
+                    "NaturalLanguage": "hasCommercialPolicy is true"
+                  },
+                  {
+                    "Logic": "(= isZombieApocalypseEvent\n   false)",
+                    "NaturalLanguage": "isZombieApocalypseEvent is false"
+                  },
+                  {
+                    "Logic": "(= isPropertyProtected\n   false)",
+                    "NaturalLanguage": "isPropertyProtected is false"
+                  },
+                  {
+                    "Logic": "(= isCoverageVoid false)",
+                    "NaturalLanguage": "isCoverageVoid is false"
+                  },
+                  {
+                    "Logic": "(= zombieCount 0)",
+                    "NaturalLanguage": "zombieCount is equal to 0"
+                  },
+                  {
+                    "Logic": "(= virusProtectionActive\n   false)",
+                    "NaturalLanguage": "virusProtectionActive is false"
+                  },
+                  {
+                    "Logic": "(= hasMultipleCreatureTypes\n   true)",
+                    "NaturalLanguage": "hasMultipleCreatureTypes is true"
+                  },
+                  {
+                    "Logic": "(= isFullMoonPeriod\n   false)",
+                    "NaturalLanguage": "isFullMoonPeriod is false"
+                  },
+                  {
+                    "Logic": "(= zombiePresent true)",
+                    "NaturalLanguage": "zombiePresent is true"
+                  },
+                  {
+                    "Logic": "(= alienPresent false)",
+                    "NaturalLanguage": "alienPresent is false"
+                  },
+                  {
+                    "Logic": "(= isSummerSeason false)",
+                    "NaturalLanguage": "isSummerSeason is false"
+                  },
+                  {
+                    "Logic": "(= alienEncounterCount\n   0)",
+                    "NaturalLanguage": "alienEncounterCount is equal to 0"
+                  }
+                ]
+              },
+              "LogicWarning": null,
+              "SupportingRules": [
+                {
+                  "Identifier": "G5RM904Q7KKA",
+                  "PolicyVersionArn": "arn:aws:bedrock:eu-central-1:795048271754:automated-reasoning-policy/b4mjr9xhwpj0:2"
+                }
+              ],
+              "Translation": {
+                "Claims": [
+                  {
+                    "Logic": "(not isCohabitationAllowed)",
+                    "NaturalLanguage": "isCohabitationAllowed is false"
+                  }
+                ],
+                "Confidence": 1,
+                "Premises": [
+                  {
+                    "Logic": "vampirePresent",
+                    "NaturalLanguage": "vampirePresent"
+                  },
+                  {
+                    "Logic": "zombiePresent",
+                    "NaturalLanguage": "zombiePresent"
+                  }
+                ],
+                "UntranslatedClaims": [],
+                "UntranslatedPremises": []
+              }
+            }
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 21,
+            "Total": 86
+          }
+        },
+        "GuardrailProcessingLatency": 4241,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 21,
+      "Total": 86
+    }
+  },
+  "ResultMetadata": {}
+}

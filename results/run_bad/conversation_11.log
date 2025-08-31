@@ -1,0 +1,142 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "DifferenceScenarios": [
+                {
+                  "Statements": []
+                },
+                {
+                  "Statements": [
+                    {
+                      "Logic": "(= isPropertyProtected\n   false)",
+                      "NaturalLanguage": "isPropertyProtected is false"
+                    },
+                    {
+                      "Logic": "(= alienEncounterCount\n   5)",
+                      "NaturalLanguage": "alienEncounterCount is equal to 5"
+                    },
+                    {
+                      "Logic": "(= virusProtectionActive\n   true)",
+                      "NaturalLanguage": "virusProtectionActive is true"
+                    }
+                  ]
+                }
+              ],
+              "Options": [
+                {
+                  "Translations": [
+                    {
+                      "Claims": [
+                        {
+                          "Logic": "isPropertyProtected",
+                          "NaturalLanguage": "isPropertyProtected"
+                        }
+                      ],
+                      "Confidence": null,
+                      "Premises": [
+                        {
+                          "Logic": "virusProtectionActive",
+                          "NaturalLanguage": "virusProtectionActive"
+                        },
+                        {
+                          "Logic": "(= alienEncounterCount\n   5)",
+                          "NaturalLanguage": "alienEncounterCount is equal to 5"
+                        }
+                      ],
+                      "UntranslatedClaims": [],
+                      "UntranslatedPremises": []
+                    }
+                  ]
+                },
+                {
+                  "Translations": [
+                    {
+                      "Claims": [
+                        {
+                          "Logic": "true",
+                          "NaturalLanguage": "true"
+                        }
+                      ],
+                      "Confidence": null,
+                      "Premises": [
+                        {
+                          "Logic": "virusProtectionActive",
+                          "NaturalLanguage": "virusProtectionActive"
+                        },
+                        {
+                          "Logic": "(= alienEncounterCount\n   5)",
+                          "NaturalLanguage": "alienEncounterCount is equal to 5"
+                        }
+                      ],
+                      "UntranslatedClaims": [
+                        {
+                          "Text": "all cases are covered"
+                        }
+                      ],
+                      "UntranslatedPremises": []
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "Value": {}
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 26,
+            "Total": 149
+          }
+        },
+        "GuardrailProcessingLatency": 4378,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 26,
+      "Total": 149
+    }
+  },
+  "ResultMetadata": {}
+}

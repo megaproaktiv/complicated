@@ -1,0 +1,174 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "ClaimsTrueScenario": {
+                "Statements": [
+                  {
+                    "Logic": "(= zombiePresent false)",
+                    "NaturalLanguage": "zombiePresent is false"
+                  },
+                  {
+                    "Logic": "(= allThreeCreaturesWithin30Days\n   false)",
+                    "NaturalLanguage": "allThreeCreaturesWithin30Days is false"
+                  },
+                  {
+                    "Logic": "(= alienPresent false)",
+                    "NaturalLanguage": "alienPresent is false"
+                  },
+                  {
+                    "Logic": "(= vampirePresent false)",
+                    "NaturalLanguage": "vampirePresent is false"
+                  },
+                  {
+                    "Logic": "(= alienEncounterCount\n   0)",
+                    "NaturalLanguage": "alienEncounterCount is equal to 0"
+                  },
+                  {
+                    "Logic": "(= hasPhotoEvidence\n   false)",
+                    "NaturalLanguage": "hasPhotoEvidence is false"
+                  },
+                  {
+                    "Logic": "(= vampireCount 0)",
+                    "NaturalLanguage": "vampireCount is equal to 0"
+                  },
+                  {
+                    "Logic": "(= virusProtectionActive\n   false)",
+                    "NaturalLanguage": "virusProtectionActive is false"
+                  },
+                  {
+                    "Logic": "(= isZombieApocalypseEvent\n   true)",
+                    "NaturalLanguage": "isZombieApocalypseEvent is true"
+                  },
+                  {
+                    "Logic": "(= isCoverageVoid false)",
+                    "NaturalLanguage": "isCoverageVoid is false"
+                  },
+                  {
+                    "Logic": "(= isPropertyProtected\n   false)",
+                    "NaturalLanguage": "isPropertyProtected is false"
+                  },
+                  {
+                    "Logic": "(= isCohabitationAllowed\n   false)",
+                    "NaturalLanguage": "isCohabitationAllowed is false"
+                  },
+                  {
+                    "Logic": "(= zombieCount 51)",
+                    "NaturalLanguage": "zombieCount is equal to 51"
+                  },
+                  {
+                    "Logic": "(= hasExtraterrestrialContactAddendum\n   false)",
+                    "NaturalLanguage": "hasExtraterrestrialContactAddendum is false"
+                  },
+                  {
+                    "Logic": "(= isFullMoonPeriod\n   false)",
+                    "NaturalLanguage": "isFullMoonPeriod is false"
+                  },
+                  {
+                    "Logic": "(= hasMultipleCreatureTypes\n   false)",
+                    "NaturalLanguage": "hasMultipleCreatureTypes is false"
+                  },
+                  {
+                    "Logic": "(= isSummerSeason false)",
+                    "NaturalLanguage": "isSummerSeason is false"
+                  },
+                  {
+                    "Logic": "(= hasCommercialPolicy\n   false)",
+                    "NaturalLanguage": "hasCommercialPolicy is false"
+                  },
+                  {
+                    "Logic": "(= insuranceType BASIC)",
+                    "NaturalLanguage": "insuranceType is equal to BASIC"
+                  }
+                ]
+              },
+              "LogicWarning": null,
+              "SupportingRules": [
+                {
+                  "Identifier": "P17QQUUAMUIA",
+                  "PolicyVersionArn": "arn:aws:bedrock:eu-central-1:795048271754:automated-reasoning-policy/b4mjr9xhwpj0:2"
+                },
+                {
+                  "Identifier": "VA19YUV41M66",
+                  "PolicyVersionArn": "arn:aws:bedrock:eu-central-1:795048271754:automated-reasoning-policy/b4mjr9xhwpj0:2"
+                }
+              ],
+              "Translation": {
+                "Claims": [
+                  {
+                    "Logic": "(not isPropertyProtected)",
+                    "NaturalLanguage": "isPropertyProtected is false"
+                  }
+                ],
+                "Confidence": 1,
+                "Premises": [
+                  {
+                    "Logic": "(= zombieCount 51)",
+                    "NaturalLanguage": "zombieCount is equal to 51"
+                  },
+                  {
+                    "Logic": "(= insuranceType BASIC)",
+                    "NaturalLanguage": "insuranceType is equal to BASIC"
+                  }
+                ],
+                "UntranslatedClaims": [],
+                "UntranslatedPremises": []
+              }
+            }
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 38,
+            "Total": 110
+          }
+        },
+        "GuardrailProcessingLatency": 4740,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 38,
+      "Total": 110
+    }
+  },
+  "ResultMetadata": {}
+}

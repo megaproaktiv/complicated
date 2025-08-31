@@ -1,0 +1,98 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "ContradictingRules": [
+                {
+                  "Identifier": "G5RM904Q7KKA",
+                  "PolicyVersionArn": "arn:aws:bedrock:eu-central-1:795048271754:automated-reasoning-policy/b4mjr9xhwpj0:2"
+                }
+              ],
+              "LogicWarning": null,
+              "Translation": {
+                "Claims": [
+                  {
+                    "Logic": "isPropertyProtected",
+                    "NaturalLanguage": "isPropertyProtected"
+                  }
+                ],
+                "Confidence": 1,
+                "Premises": [
+                  {
+                    "Logic": "vampirePresent",
+                    "NaturalLanguage": "vampirePresent"
+                  },
+                  {
+                    "Logic": "zombiePresent",
+                    "NaturalLanguage": "zombiePresent"
+                  },
+                  {
+                    "Logic": "isCohabitationAllowed",
+                    "NaturalLanguage": "isCohabitationAllowed"
+                  },
+                  {
+                    "Logic": "(= insuranceType BASIC)",
+                    "NaturalLanguage": "insuranceType is equal to BASIC"
+                  }
+                ],
+                "UntranslatedClaims": [],
+                "UntranslatedPremises": []
+              }
+            }
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 39,
+            "Total": 124
+          }
+        },
+        "GuardrailProcessingLatency": 4758,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 39,
+      "Total": 124
+    }
+  },
+  "ResultMetadata": {}
+}

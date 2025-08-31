@@ -1,0 +1,172 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "ClaimsTrueScenario": {
+                "Statements": [
+                  {
+                    "Logic": "(= hasExtraterrestrialContactAddendum\n   true)",
+                    "NaturalLanguage": "hasExtraterrestrialContactAddendum is true"
+                  },
+                  {
+                    "Logic": "(= vampirePresent false)",
+                    "NaturalLanguage": "vampirePresent is false"
+                  },
+                  {
+                    "Logic": "(= allThreeCreaturesWithin30Days\n   false)",
+                    "NaturalLanguage": "allThreeCreaturesWithin30Days is false"
+                  },
+                  {
+                    "Logic": "(= isSummerSeason false)",
+                    "NaturalLanguage": "isSummerSeason is false"
+                  },
+                  {
+                    "Logic": "(= isCoverageVoid false)",
+                    "NaturalLanguage": "isCoverageVoid is false"
+                  },
+                  {
+                    "Logic": "(= isPropertyProtected\n   false)",
+                    "NaturalLanguage": "isPropertyProtected is false"
+                  },
+                  {
+                    "Logic": "(= isCohabitationAllowed\n   false)",
+                    "NaturalLanguage": "isCohabitationAllowed is false"
+                  },
+                  {
+                    "Logic": "(= alienEncounterCount\n   5)",
+                    "NaturalLanguage": "alienEncounterCount is equal to 5"
+                  },
+                  {
+                    "Logic": "(= zombiePresent false)",
+                    "NaturalLanguage": "zombiePresent is false"
+                  },
+                  {
+                    "Logic": "(= isZombieApocalypseEvent\n   false)",
+                    "NaturalLanguage": "isZombieApocalypseEvent is false"
+                  },
+                  {
+                    "Logic": "(= vampireCount 0)",
+                    "NaturalLanguage": "vampireCount is equal to 0"
+                  },
+                  {
+                    "Logic": "(= isFullMoonPeriod\n   false)",
+                    "NaturalLanguage": "isFullMoonPeriod is false"
+                  },
+                  {
+                    "Logic": "(= zombieCount 0)",
+                    "NaturalLanguage": "zombieCount is equal to 0"
+                  },
+                  {
+                    "Logic": "(= alienPresent false)",
+                    "NaturalLanguage": "alienPresent is false"
+                  },
+                  {
+                    "Logic": "(= virusProtectionActive\n   true)",
+                    "NaturalLanguage": "virusProtectionActive is true"
+                  },
+                  {
+                    "Logic": "(= hasMultipleCreatureTypes\n   false)",
+                    "NaturalLanguage": "hasMultipleCreatureTypes is false"
+                  },
+                  {
+                    "Logic": "(= hasPhotoEvidence\n   false)",
+                    "NaturalLanguage": "hasPhotoEvidence is false"
+                  },
+                  {
+                    "Logic": "(= insuranceType BASIC)",
+                    "NaturalLanguage": "insuranceType is equal to BASIC"
+                  },
+                  {
+                    "Logic": "(= hasCommercialPolicy\n   false)",
+                    "NaturalLanguage": "hasCommercialPolicy is false"
+                  }
+                ]
+              },
+              "LogicWarning": null,
+              "SupportingRules": null,
+              "Translation": {
+                "Claims": [
+                  {
+                    "Logic": "true",
+                    "NaturalLanguage": "true"
+                  }
+                ],
+                "Confidence": 1,
+                "Premises": [
+                  {
+                    "Logic": "virusProtectionActive",
+                    "NaturalLanguage": "virusProtectionActive"
+                  },
+                  {
+                    "Logic": "(= alienEncounterCount\n   5)",
+                    "NaturalLanguage": "alienEncounterCount is equal to 5"
+                  }
+                ],
+                "UntranslatedClaims": [
+                  {
+                    "Text": "Yes, no problem"
+                  }
+                ],
+                "UntranslatedPremises": []
+              }
+            }
+          },
+          {
+            "Value": {}
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 15,
+            "Total": 138
+          }
+        },
+        "GuardrailProcessingLatency": 4531,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 15,
+      "Total": 138
+    }
+  },
+  "ResultMetadata": {}
+}

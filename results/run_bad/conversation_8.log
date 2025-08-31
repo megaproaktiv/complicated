@@ -1,0 +1,155 @@
+{
+  "Action": "NONE",
+  "Assessments": [
+    {
+      "AutomatedReasoningPolicy": {
+        "Findings": [
+          {
+            "Value": {
+              "DifferenceScenarios": [
+                {
+                  "Statements": []
+                },
+                {
+                  "Statements": [
+                    {
+                      "Logic": "(= isPropertyProtected\n   false)",
+                      "NaturalLanguage": "isPropertyProtected is false"
+                    },
+                    {
+                      "Logic": "(= insuranceType BASIC)",
+                      "NaturalLanguage": "insuranceType is equal to BASIC"
+                    },
+                    {
+                      "Logic": "(= hasMultipleCreatureTypes\n   false)",
+                      "NaturalLanguage": "hasMultipleCreatureTypes is false"
+                    },
+                    {
+                      "Logic": "(= zombiePresent true)",
+                      "NaturalLanguage": "zombiePresent is true"
+                    },
+                    {
+                      "Logic": "(= vampirePresent true)",
+                      "NaturalLanguage": "vampirePresent is true"
+                    }
+                  ]
+                }
+              ],
+              "Options": [
+                {
+                  "Translations": [
+                    {
+                      "Claims": [
+                        {
+                          "Logic": "isPropertyProtected",
+                          "NaturalLanguage": "isPropertyProtected"
+                        }
+                      ],
+                      "Confidence": null,
+                      "Premises": [
+                        {
+                          "Logic": "vampirePresent",
+                          "NaturalLanguage": "vampirePresent"
+                        },
+                        {
+                          "Logic": "zombiePresent",
+                          "NaturalLanguage": "zombiePresent"
+                        },
+                        {
+                          "Logic": "(= insuranceType BASIC)",
+                          "NaturalLanguage": "insuranceType is equal to BASIC"
+                        }
+                      ],
+                      "UntranslatedClaims": [],
+                      "UntranslatedPremises": []
+                    }
+                  ]
+                },
+                {
+                  "Translations": [
+                    {
+                      "Claims": [
+                        {
+                          "Logic": "isPropertyProtected",
+                          "NaturalLanguage": "isPropertyProtected"
+                        }
+                      ],
+                      "Confidence": null,
+                      "Premises": [
+                        {
+                          "Logic": "vampirePresent",
+                          "NaturalLanguage": "vampirePresent"
+                        },
+                        {
+                          "Logic": "zombiePresent",
+                          "NaturalLanguage": "zombiePresent"
+                        },
+                        {
+                          "Logic": "(= insuranceType BASIC)",
+                          "NaturalLanguage": "insuranceType is equal to BASIC"
+                        },
+                        {
+                          "Logic": "hasMultipleCreatureTypes",
+                          "NaturalLanguage": "hasMultipleCreatureTypes"
+                        }
+                      ],
+                      "UntranslatedClaims": [],
+                      "UntranslatedPremises": []
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "ContentPolicy": null,
+      "ContextualGroundingPolicy": null,
+      "InvocationMetrics": {
+        "GuardrailCoverage": {
+          "Images": null,
+          "TextCharacters": {
+            "Guarded": 39,
+            "Total": 132
+          }
+        },
+        "GuardrailProcessingLatency": 4910,
+        "Usage": {
+          "ContentPolicyUnits": 0,
+          "ContextualGroundingPolicyUnits": 0,
+          "SensitiveInformationPolicyFreeUnits": 0,
+          "SensitiveInformationPolicyUnits": 0,
+          "TopicPolicyUnits": 0,
+          "WordPolicyUnits": 0,
+          "AutomatedReasoningPolicies": 1,
+          "AutomatedReasoningPolicyUnits": 1,
+          "ContentPolicyImageUnits": 0
+        }
+      },
+      "SensitiveInformationPolicy": null,
+      "TopicPolicy": null,
+      "WordPolicy": null
+    }
+  ],
+  "Outputs": [],
+  "Usage": {
+    "ContentPolicyUnits": 0,
+    "ContextualGroundingPolicyUnits": 0,
+    "SensitiveInformationPolicyFreeUnits": 0,
+    "SensitiveInformationPolicyUnits": 0,
+    "TopicPolicyUnits": 0,
+    "WordPolicyUnits": 0,
+    "AutomatedReasoningPolicies": 1,
+    "AutomatedReasoningPolicyUnits": 1,
+    "ContentPolicyImageUnits": 0
+  },
+  "ActionReason": "No action.",
+  "GuardrailCoverage": {
+    "Images": null,
+    "TextCharacters": {
+      "Guarded": 39,
+      "Total": 132
+    }
+  },
+  "ResultMetadata": {}
+}

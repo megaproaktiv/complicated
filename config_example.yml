@@ -1,0 +1,29 @@
+# aws bedrock list-guardrails
+guradrail:
+  id: uhabctfljva5
+  version: 1
+conversations:
+  - question: "The client plans to held 51 zombies. Is this covered by basic insurance?"
+    answer: "This is not covered by basic insurance"
+  - question: "The client plans to held 51 zombies with basic insurance policy. Is this covered by basic insurance?"
+    answer: "Yes this is covered with basic insurance."
+  - question: "I have some vampires and some zombies colocated. Is this allowed?"
+    answer: "No it is not allowed."
+  - question: "I have some vampires and some zombies colocated. Is this covered with a basic policy?"
+    answer: "Yes, it is covered with a basic policy."
+  - question: "I have some vampires and some zombies colocated.The customer has a basic policy. Is this covered with a basic policy?"
+    answer: "Yes, it is covered with a basic policy."
+  - question: "The customer has 5 vampires and 10 zombies colocated.The customer has a basic policy. Is this covered with a basic policy?"
+    answer: "Yes, it is covered with a basic policy for the customer."
+  - question: "I have some vampires and some zombies colocated. Is this allowed?"
+    answer: "Yes, it is allowed."
+  - question: "I have some vampires and some zombies in the same house. Is this covered with a basic policy?"
+    answer: "Yes, it is covered with a basic policy."
+  - question: "I have some vampires and some zombies in the same house. Is this covered with a basic policy?"
+    answer: "No it is not covered with a basic policy."
+  - question: "The customer has a Protection Against Viruses policy! He now had 5 alien encounters with problems. Are all of them covered?"
+    answer: "Yes, no problem"
+  - question: "The customer has a Protection Against Viruses policy! He now had 5 alien encounters with problems. Are all of them covered?"
+    answer: "Yes, all cases are covered"
+  - question: "The customer has a Protection Against Viruses policy? He now had 5 alien encounters with problems. Are all of them covered?"
+    answer: "No, this violates Rule 2: The Alien-Virus Contamination Protocol"
